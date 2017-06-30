@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>超链接样式</title>
+	<meta charset="utf-8">
+
+	<style>
+		a:visited{
+			color: orange;
+			/*以橙色的样式显示连接内容*/
+		}
+		a:hover{
+			color: black;
+			/*鼠标滑过超链接呈现黑色*/
+		}
+		a:active{
+			color: green;
+			/*点击边蓝色*/
+		}
+		a{
+			text-decoration: none;
+			/*去掉超链接默认的下划线*/
+
+		}
+
+		body{
+			padding-left: 200px;
+			padding-top: 50px;
+		}
+
+	</style>
+</head>
+<body>
+	<h2>超链接的默认样式是蓝色+下划线，点击后变红色</h2>
+	<a href="https://www.baidu.com" target="_blank">访问百度</a>
+	<h2>改样式后的</h2>
+	<a href="https://www.baidu.com" target="_blank">访问百度</a>
+	<!-- target = "_blank" 在新的页面打开链接 -->
+</body>
+</html>

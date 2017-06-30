@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表格</title>
+	<meta charset="utf-8">
+</head>
+<body style="padding-left: 200px;padding-top: 50px">
+<p>水平标题</p>
+	<table border="2">
+	<caption>HTML5表格学习</caption>
+		<tr>
+			<th>Name</th>
+			<th>Telephone</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>WYY</td>
+			<td>12345678912</td>
+			<td>21</td>
+		</tr>
+
+		<tr>
+			<td>WWW</td>
+			<td>554644124</td>
+			<td>44</td>
+		</tr>
+	</table>
+	<br>
+	
+	<p>垂直标题</p>
+	<table border="2" cellpadding="10">
+	<!-- cellpadding 表格单元边界与单元内容之间的间距设置为 10 像素 -->
+	<caption>HTML5表格学习</caption>
+		<tr>
+			<th>Name</th>
+			<td>WYY</td>
+		</tr>
+
+		<tr>
+			<th>Telephone</th>
+			<td>12345678945</td>
+			
+		</tr>
+		<tr>
+			<th>Age</th>
+			<td>21</td>
+		</tr>
+	</table>
+	<p>---------------------------------------</p>
+	<br>
+	<p>跨列合并</p>
+	<table  border="2">
+		<tr>
+			<th>Name</th>
+			<th colspan="2">Telephone</th>
+			<!-- <th></th> -->
+		</tr>	
+		<tr>
+			<td>Wyy</td>
+			<td>123456789</td>
+			<td>000000</td>
+		</tr>	
+		<tr>
+			<td>Www</td>
+			<td>23456890</td>
+			<td>11111</td>
+		</tr>
+	</table>
+	<br>
+	<p>跨行合并</p>
+	<table border="2">
+		<tr>
+			<th>Name</th>
+			<td>WYY</td>
+		</tr>
+		<tr>
+			<th rowspan="2">Telephone</th>
+			<td>1875265245</td>
+		</tr>
+		<tr>
+			<!-- <th>Age</th> -->
+			<td>21</td>
+		</tr>
+	</table>
+	<hr>
+	<br>
+
+
+	<table border="1">
+  <colgroup>
+    <col span="2" style="background-color:red">
+    <col style="background-color:yellow">
+  </colgroup>
+  <tr>
+    <th>ISBN</th>
+    <th>Title</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>3476896</td>
+    <td>My first HTML</td>
+    <td>$53</td>
+  </tr>
+</table>
+<br>
+
+</body>
+</html>

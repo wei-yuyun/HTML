@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单</title>
+</head>
+<style>
+	body{
+		padding-left: 100px;
+		padding-top: 50px;
+	}
+	h3{
+		/*color: #EEEEEE;*/
+		color: green;
+	}
+</style>
+<body>
+	<form action="">
+	<!-- action属性提交跳转的页面 -->
+	<h3>文本域和密码字段</h3>
+		<label>姓名：</label>
+		<input type="text" name="name"><br><br>
+		<label>密码：</label>
+		<input type="password" name="pwd"><br><br>
+		<label>年龄：</label>
+		<input type="text" name="年龄">
+		<br><br>
+		<br>
+
+		<h4>带边框的表单：</h4>
+		<fieldset style="width: 400px">
+		<legend>个人信息</legend>
+		<label>姓名：</label>
+		<input type="text" name="name" size="30"><br><br>
+		<label>密码：</label>
+		<input type="password" name="pwd" size="30"><br><br>
+		<label>年龄：</label>
+		<input type="text" name="年龄" size="30">
+		</fieldset>
+		<br><br>
+
+
+
+
+		<h3>单选按钮—— Radio Buttons</h3>
+		<input type="radio" name="gender" value="男">男<br><br>
+		<input type="radio" name="gender" value="女">女<br><br>
+		<h3>复选框—— Checkboxes</h3>
+		<input type="checkbox" name="hobby" value="dance">跳舞<br><br>
+		<input type="checkbox" name="hobby" value="sing">唱歌<br><br>
+		<input type="checkbox" name="hobby" value="swim">游泳<br><br>
+		<input type="checkbox" name ="hobby" value="read">阅读<br><br>
+		<h3>提交按钮——Submit Button</h3>
+		<input type="submit" value="提交"><br><br>
+		<input type="reset" value="重置">
+		<br><br>
+		<h3>简单的下拉列表框(带预选的)</h3>
+		<select name="car">
+			<option value="丰田">丰田</option>
+			<option value="路虎">路虎</option>
+			<option value="宝马">宝马</option>
+			<option value="奔驰" selected>奔驰</option>
+			<option value="雪佛兰">雪佛兰</option>
+		</select>
+		<br><br>
+		<h3>文本框——textarea</h3>
+		<textarea name="demo" cols="30" rows="10"></textarea>
+	</form>
+	<p><b>注意：</b>  表单本身是不可见的。并且注意一个文本字段的默认宽度是20个字符。</p>
+</body>
+</html>
